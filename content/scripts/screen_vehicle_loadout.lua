@@ -55,7 +55,7 @@ function get_selected_vehicle_attachment_options(attachment_type)
     for i = 0, option_count - 1 do
         local attachment_definition = update_get_attachment_option(attachment_type, i)
 
-        if attachment_definition > -1 and update_get_attachment_option_hidden(attachment_definition) == false then
+        if attachment_definition > -1 then
             local attachment_data = get_attachment_data_by_definition_index(attachment_definition)
 
             table.insert(attachment_options, {
